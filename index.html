@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>AURA — a 10-second light study</title>
+<style>
+  :root{--ink:#f4f1ea;--muted:#8f877a;--bg:#0b0a10;--line:#221f2b}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:400 16px/1.6 ui-sans-serif,-apple-system,"Segoe UI",Inter,sans-serif}
+  main{max-width:1080px;margin:0 auto;padding:56px 24px 72px}
+  .eyebrow{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+  h1{font-size:clamp(28px,4vw,44px);line-height:1.1;letter-spacing:-.02em;margin:14px 0 10px;font-weight:600}
+  h1 em{font-style:normal;color:#c9b8ff}
+  p.lede{color:var(--muted);max-width:62ch;margin:0 0 34px}
+  .player{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#000;
+    box-shadow:0 30px 80px rgba(0,0,0,.55)}
+  video{display:block;width:100%;height:auto}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:44px;
+    border-top:1px solid var(--line);padding-top:30px}
+  .grid h2{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
+    margin:0 0 8px;font-weight:600}
+  .grid p{margin:0;font-size:14px;color:#c9c3b8}
+  .meta{margin-top:38px;font-size:12px;color:#635c55;letter-spacing:.04em}
+  @media (max-width:760px){.grid{grid-template-columns:1fr;gap:20px}main{padding:36px 18px 56px}}
+</style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">Motion study · 10 s · 1920×1080 · 30 fps</div>
+  <h1>AURA — <em>light, accumulating</em></h1>
+  <p class="lede">A ten-second test built to answer one question: are the mg-styles-15 prompt recipes and the
+    video-shotcraft shot cards worth adopting? Everything here is code — HyperFrames composition, our own
+    curve work, and a licensed cue from the house music library. No stock templates, no paid plugins.</p>
+
+  <div class="player">
+    <video src="film.mp4" poster="poster.png" controls autoplay muted loop playsinline></video>
+  </div>
+
+  <div class="grid">
+    <div>
+      <h2>What it tests</h2>
+      <p>A single-object light build: pastel mist resolving into a glass sphere, with type that leaves
+        before the render arrives.</p>
+    </div>
+    <div>
+      <h2>How it was checked</h2>
+      <p>Motion gate measured on real frames: median 3.15 against a 2.5 floor, longest dead run 1 s
+        against a 2 s ceiling. Integrated loudness −16 LUFS.</p>
+    </div>
+    <div>
+      <h2>Honest limit</h2>
+      <p>The gradient language is borrowed from current tech branding. It is executed carefully, not
+        invented — read this as a capability test, not an identity.</p>
+    </div>
+  </div>
+
+  <div class="meta">HyperFrames · three.js · licensed cue from the house library · built on CPU, no GPU queue</div>
+</main>
+</body>
+</html>
